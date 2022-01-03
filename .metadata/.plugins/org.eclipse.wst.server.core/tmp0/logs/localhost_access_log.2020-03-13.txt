@@ -1,0 +1,7 @@
+127.0.0.1 - - [13/Mar/2020:13:14:05 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:09 +0530] "GET /CalciProject/ HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:09 +0530] "GET /CalciProject/style.css HTTP/1.1" 200 69
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:14 +0530] "GET /CalciProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:14 +0530] "GET /CalciProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:14 +0530] "GET /CalciProject/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Mar/2020:13:14:24 +0530] "POST /CalciProject/CalciServlet HTTP/1.1" 200 218

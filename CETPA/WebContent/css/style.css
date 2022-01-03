@@ -1,0 +1,12 @@
+body{
+	background: aliceblue;
+	color: orange;
+}
+
+h1{
+	text-align: center;
+}
+
+a,a:hover{
+	color: green;
+}

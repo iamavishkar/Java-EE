@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GoogleSearch/src/MySearch.java&apos; to &apos;GoogleSearch.java&apos;" description="Rename resource &apos;MySearch.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/MySearch.java" name="GoogleSearch.java" stamp="1581075014146" updateReferences="true"/>
+</session>

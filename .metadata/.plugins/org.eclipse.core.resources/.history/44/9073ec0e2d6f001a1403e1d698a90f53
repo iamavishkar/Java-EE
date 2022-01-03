@@ -1,0 +1,19 @@
+import java.io.*;
+import javax.servlet.http.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+@WebServlet("mysession")
+
+public class MySession extends HttpServlet{
+	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		response.setContentType("text/css");
+		PrintWriter out = response.getWriter();
+		
+		//HttpSession Code Here
+		HttpSession session = request.getSession();
+		out.print(session.getMaxInactiveInterval()); //to get max time of interval default=1800sec
+		out.print("<br>");
+		out.print(session.getId()); //to get sessionID
+		
+	}
+}

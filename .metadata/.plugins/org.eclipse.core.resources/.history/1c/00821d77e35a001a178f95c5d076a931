@@ -1,0 +1,26 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+@WebServlet("/Login")
+
+public class Login extends HttpServlet{
+	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		String email = request.getParameter("email");
+		String pass = request.getParameter("pass");
+		
+		if( (email.equals("demo") ) && (pass.equals("pass")) ) {
+			RequestDispatcher rd = request.getRequestDispatcher("Success");
+			rd.forward(request, response);
+		}else {
+			out.print("Incorrect email and password");
+			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+			rd.forward(request, response);
+		}
+		
+	}
+}
